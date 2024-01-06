@@ -8,7 +8,10 @@
 
 .header {
   background: #fff8f3;
-  padding: 50px 230px 0;
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, bottom left;
 }
 
 /* navbar */
@@ -16,8 +19,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 50px 230px 0;
 }
-.nav ul {
+.nav > ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -38,4 +42,100 @@
   background-color: #fd6e0a;
   border-radius: 5px;
   border: none;
+}
+/* hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px 0 230px;
+}
+.hero_greetings {
+  color: #474747;
+  font-size: 45px;
+}
+.hero_title {
+  color: #181818;
+  font-size: 85px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hero_description {
+  color: #757575;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.contact_btn {
+  background-color: transparent;
+  border: 2px solid #fd6e0a;
+  color: #fd6e0a;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+/* main section */
+.main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* about section */
+.about {
+  padding: 130px;
+  border-radius: 10px;
+  background: #fff8f3;
+  margin-top: 130px;
+  text-align: center;
+}
+.about_title,
+.what_i_do_title {
+  color: #181818;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+.about_description,
+.what_i_do_description {
+  color: #757575;
+  font-size: 18px;
+  margin: 30px 0;
+}
+.personal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details {
+  color: #757575;
+  font-size: 20px;
+}
+.info {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+/* what_i_do */
+.what_i_do {
+  padding: 130px;
+}
+.what_i_do_description {
+  margin-bottom: 50px;
+}
+.skill_column {
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+.skill_title {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0 20px 0;
+}
+.skill_discription {
+  color: #757575;
+  font-size: 16px;
+  line-height: 28px;
 }

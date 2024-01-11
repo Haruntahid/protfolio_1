@@ -243,3 +243,137 @@ textarea {
 textarea:focus-visible {
   outline: none;
 }
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  .header {
+    background-image: none;
+  }
+  .hero {
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hero_side > img {
+    width: 100%;
+  }
+  .hero_title {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  .contact_btn {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .nav {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .nav > ul {
+    flex-direction: column;
+  }
+  .nav ul li {
+    margin: 10px 0;
+  }
+  .about {
+    padding: 20px;
+    margin-top: 0;
+  }
+  .personal {
+    flex-direction: column;
+  }
+  .skill_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .what_i_do_content {
+    padding: 20px;
+  }
+  .resume_main {
+    margin: 20px 0;
+  }
+  .resume_head {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .my_resume {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  .footer {
+    margin-top: 20px;
+    padding: 20px 0;
+  }
+  .footer_row {
+    flex-direction: column-reverse;
+  }
+  .footer_container {
+    width: 80%;
+    margin-left: 20px;
+  }
+  .footer_row {
+    gap: 40px;
+  }
+  .social {
+    text-align: center;
+  }
+}
+
+/* medium screen */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .nav {
+    padding: 50px 30px 0;
+  }
+  .hero {
+    padding: 50px 30px 0 38px;
+  }
+  .header {
+    background-image: none;
+  }
+  .hero_side > img {
+    width: 100%;
+  }
+  .hero_title {
+    font-size: 50px;
+  }
+  .hero_description {
+    margin-bottom: 20px;
+  }
+  .primary_btn,
+  .contact_btn {
+    padding: 10px 30px;
+  }
+  .contact_btn {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  .personal {
+    flex-direction: column;
+  }
+  .skill_container {
+    flex-wrap: wrap;
+  }
+  .my_resume {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .footer {
+    margin-top: 20px;
+    padding: 20px 0;
+  }
+  .footer_row {
+    flex-direction: column-reverse;
+  }
+  .footer_container {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .footer_row {
+    gap: 40px;
+  }
+  .social {
+    text-align: center;
+  }
+}
